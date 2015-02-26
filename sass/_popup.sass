@@ -95,17 +95,12 @@
 		margin-bottom: 7px 
 .popup__rating
 	li
-		text-align: justify
-		font-size: 0.1px
-		margin-bottom: 6px
-		&:after
-			content: "" 
-			width: 100%
-			display: inline-block
+		+clr
+		padding: 1px 0 2px 
 	span
-		display: inline-block
-		vertical-align: top
 		max-width: 270px
+		width: 50%
+		float: left
 		font-size: 12px
 		line-height: 2
 		color: #999
@@ -115,8 +110,9 @@
 		text-align: left
 	ul
 		font-size: 0
-		display: inline-block
-		vertical-align: top
+		float: right
+		width: 50%
+		text-align: right
 		li
 			display: inline-block
 			text-align: left

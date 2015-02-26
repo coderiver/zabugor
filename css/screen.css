@@ -1471,10 +1471,10 @@ a { text-decoration: none; }
 
 .popup__radio li { margin-bottom: 7px; }
 
-.popup__rating li { text-align: justify; font-size: 0.1px; margin-bottom: 6px; }
-.popup__rating li:after { content: ""; width: 100%; display: inline-block; }
-.popup__rating span { display: inline-block; vertical-align: top; max-width: 270px; font-size: 12px; line-height: 2; color: #999999; text-transform: uppercase; letter-spacing: 0.05em; font-family: "futurademic", Arial, sans-serif; text-align: left; }
-.popup__rating ul { font-size: 0; display: inline-block; vertical-align: top; }
+.popup__rating li { *zoom: 1; padding: 1px 0 2px; }
+.popup__rating li:after { content: " "; display: table; clear: both; }
+.popup__rating span { max-width: 270px; width: 50%; float: left; font-size: 12px; line-height: 2; color: #999999; text-transform: uppercase; letter-spacing: 0.05em; font-family: "futurademic", Arial, sans-serif; text-align: left; }
+.popup__rating ul { font-size: 0; float: right; width: 50%; text-align: right; }
 .popup__rating ul li { display: inline-block; text-align: left; margin-bottom: 0; }
 .popup__rating ul li a { font-size: 12px; line-height: 24px; color: #b08f52; font-family: "futurademic", Arial, sans-serif; width: 24px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; display: block; text-align: center; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 .popup__rating ul li a.is-active, .popup__rating ul li a:hover { background: #b08f52; color: white; }
