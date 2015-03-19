@@ -483,7 +483,7 @@ a { text-decoration: none; }
 .link-item a:after { bottom: 0; }
 .link-item a:before { top: 100%; opacity: 0; visibility: hidden; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 
-.banner { position: relative; padding: 6px; float: left; margin: 0 0 8px 50px; width: 465px; min-height: 222px; border: 2px solid #bd904d; text-align: center; }
+.banner { position: relative; padding: 6px; float: left; margin: 0 0 8px 50px; width: 465px; min-height: 222px; height: 315px; border: 2px solid #bd904d; text-align: center; }
 .banner:first-child, .banner:nth-child(2n+1) { margin-left: 0; }
 @media only screen and (max-width: 1250px) { .banner { margin-left: 30px; } }
 .banner:hover .banner__overlay { height: 100%; }
@@ -495,8 +495,12 @@ a { text-decoration: none; }
 .banner_height .banner__title { padding-top: 10px; }
 .banner__img { display: block; height: 183px; overflow: hidden; }
 .banner__img img { max-width: 100%; }
-.banner__title { display: block; padding: 5px 0 2px; font-size: 12px; text-transform: uppercase; color: #bd904d; font-family: "futurademic", Arial, sans-serif; }
+.banner__title, .banner p { display: block; padding: 5px 0 2px; font-size: 12px; text-transform: uppercase; color: #bd904d; font-family: "futurademic", Arial, sans-serif; }
 .banner__overlay { position: absolute; top: 0; height: 0; left: 0; right: 0; line-height: 222px; background: #bd904d; overflow: hidden; color: #fff; -moz-transition: height 0.2s linear; -o-transition: height 0.2s linear; -webkit-transition: height 0.2s linear; transition: height 0.2s linear; }
+.banner p { padding: 0 0 15px; }
+.banner h2 { font-size: 24px; text-transform: uppercase; color: #bd904d; font-family: "rex_bold", Arial, sans-serif; line-height: 1.25; padding: 15px 0 20px; }
+.banner_mod { background: #bd904d; }
+.banner_mod h2, .banner_mod p { color: #fff; }
 
 .place-list-wrap { -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; }
 
@@ -541,6 +545,14 @@ a { text-decoration: none; }
 .checkbox span { display: inline-block; position: relative; padding-left: 30px; font-size: 12px; color: #999; text-transform: uppercase; font-family: "futurademic", Arial, sans-serif; }
 .checkbox span:before { content: ""; position: absolute; left: 0; top: -1px; width: 17px; height: 17px; border: 2px solid #d6d6d6; }
 .checkbox span:after { content: ""; position: absolute; top: -10px; left: 3px; background: url('../img/icons-s18fb6f14cc.png') 0 -125px no-repeat; width: 16px; height: 16px; opacity: 0; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; visibility: hidden; }
+
+.radio { display: inline-block; position: relative; text-align: left; cursor: pointer; }
+.radio input { position: absolute; left: 0; top: 3px; width: 16px; height: 16px; opacity: 0; }
+.radio input:checked + span { color: #101010; }
+.radio input:checked + span:after { visibility: visible; opacity: 1; }
+.radio span { display: inline-block; position: relative; padding-left: 30px; font-size: 12px; color: #999; text-transform: uppercase; letter-spacing: 0.05em; font-family: "futurademic", Arial, sans-serif; }
+.radio span:before { content: ""; position: absolute; left: 0; top: 0; width: 16px; height: 16px; border: 2px solid #d6d6d6; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.radio span:after { content: ""; position: absolute; top: 5px; left: 5px; width: 6px; height: 6px; background: #000; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; opacity: 0; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; visibility: hidden; }
 
 .index-page .header a { color: #fff; }
 .index-page .header .tel { color: #fff; }
@@ -1437,6 +1449,32 @@ a { text-decoration: none; }
 .popup .btn { margin-top: 9px; }
 .popup .btn-close { position: absolute; top: 15px; right: 12px; }
 .popup p { text-align: center; }
+
+.popup-wrap { position: fixed; top: 0; left: 0; bottom: 0; right: 0; overflow: auto; display: none; text-align: center; font-size: 0; padding: 10px; z-index: 1001; }
+.popup-wrap:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.popup-wrap.is-active { display: block; }
+.popup-wrap .popup { display: inline-block; vertical-align: middle; position: relative; top: auto; left: auto; -moz-transform: translateX(0%) translateY(0%); -ms-transform: translateX(0%) translateY(0%); -webkit-transform: translateX(0%) translateY(0%); transform: translateX(0%) translateY(0%); text-align: left; }
+.popup-wrap .popup .btn-close { top: 25px; }
+
+.popup_mod { width: 632px; padding: 15px 60px 15px; }
+.popup_mod textarea { resize: none; display: block; width: 100%; margin-top: 9px; padding: 4px 5px; border: 2px solid #cccccc; font-family: "futurabookc", Arial, sans-serif; font-size: 16px; line-height: 20px; color: #303030; }
+
+.popup__text { font-size: 16px; line-height: 1.375; letter-spacing: 0.05em; color: #171717; font-family: "futurabookc", Arial, sans-serif; }
+
+.popup__info { padding-top: 20px; }
+
+.popup__title { font-size: 12px; line-height: 1.66; letter-spacing: 0.05em; color: #333333; font-family: "futurademic", Arial, sans-serif; text-transform: uppercase; display: block; margin-bottom: 7px; }
+.popup__title span { display: block; padding: 0 17px; }
+
+.popup__radio li { margin-bottom: 7px; }
+
+.popup__rating li { *zoom: 1; padding: 1px 0 2px; }
+.popup__rating li:after { content: " "; display: table; clear: both; }
+.popup__rating span { max-width: 270px; width: 50%; float: left; font-size: 12px; line-height: 2; color: #999; text-transform: uppercase; letter-spacing: 0.05em; font-family: "futurademic", Arial, sans-serif; text-align: left; }
+.popup__rating ul { font-size: 0; float: right; width: 50%; text-align: right; }
+.popup__rating ul li { display: inline-block; text-align: left; margin-bottom: 0; }
+.popup__rating ul li a { font-size: 12px; line-height: 24px; color: #b08f52; font-family: "futurademic", Arial, sans-serif; width: 24px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; display: block; text-align: center; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
+.popup__rating ul li a.is-active, .popup__rating ul li a:hover { background: #b08f52; color: #fff; }
 
 @media print { .header, .footer, .popup, .popup-overlay, .page-head__top, .page-head__img, .important-text, .post-nav, .dots-line, .contact-box, .more-info__links, .slick-next, .slick-prev, .has-sun { display: none !important; }
   .page-head { position: static !important; height: auto !important; }

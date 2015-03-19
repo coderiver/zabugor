@@ -5,6 +5,7 @@ head.ready(function() {
 		$('.js-overlay').fadeOut(500);
 		$(".js-share").removeClass("is-active");
 		$(".js-drop").removeClass("is-active");
+		$(".js-popup-wrap").removeClass("is-active");
 	});
 
 	setTimeout(function(){
@@ -144,12 +145,15 @@ head.ready(function() {
 		var targetPopup = $('#' + $(this).attr('href'));
 		$('.js-overlay').fadeIn(200);
 		targetPopup.fadeIn(500);
+		$(".js-popup-wrap").addClass("is-active");
 		event.stopPropagation();
 		return false
 	});
 
+
 	$('.js-close-popup').on('click', function(event) {
 		$(this).parents('.js-popup').fadeOut(200);
+		$(".js-popup-wrap").removeClass("is-active");
 		$('.js-overlay').fadeOut(500);
 		event.stopPropagation();
 		return false
