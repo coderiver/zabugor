@@ -388,6 +388,7 @@ a { text-decoration: none; }
 
 .ui-state-default { background: #fff; color: #303030; }
 .ui-state-default:hover, .ui-state-default.ui-state-active { background: #bd904d; color: #FFF; }
+.ui-state-default:hover.ui-state-highlight, .ui-state-default.ui-state-active.ui-state-highlight { color: #303030; }
 .ui-datepicker-today .ui-state-default { background: #f5f5f5; }
 
 .ui-datepicker-title { font-size: 14px; text-transform: uppercase; color: #FFF; }
@@ -1368,9 +1369,9 @@ a { text-decoration: none; }
 .select_no-border .checkbox { vertical-align: middle; line-height: 1.4; }
 .select__label { position: absolute; top: 1px; left: -102px; color: #303030; vertical-align: middle; }
 .select__value { display: inline-block; vertical-align: middle; color: #999; }
-.select__ico { position: absolute; z-index: 3; top: 12px; right: 14px; background: url('../img/icons-s18fb6f14cc.png') 0 -1399px no-repeat; width: 12px; height: 9px; }
+.select__ico { position: absolute; z-index: 2; top: 12px; right: 14px; background: url('../img/icons-s18fb6f14cc.png') 0 -1399px no-repeat; width: 12px; height: 9px; }
 .select__ico_calendar { top: 6px; right: 11px; background: url('../img/icons-s18fb6f14cc.png') 0 -99px no-repeat; width: 16px; height: 16px; }
-.select select { position: absolute; z-index: 2; top: 0; left: 0; height: 100% !important; width: 100% !important; opacity: 0 !important; -webkit-appearance: none; }
+.select select { position: absolute; z-index: 3; top: 0; left: 0; height: 100% !important; width: 100% !important; opacity: 0 !important; -webkit-appearance: none; }
 .select input[type="text"] { position: absolute; z-index: 2; top: 0; left: 0; height: 100%; width: 100%; padding: 0 30px 0 17px; font-size: 12px; font-family: "futurademic", Arial, sans-serif; color: #999; text-transform: uppercase; }
 
 .tabs { *zoom: 1; margin-bottom: 40px; }
@@ -1485,6 +1486,54 @@ a { text-decoration: none; }
   .slick-slide { display: block !important; width: 100% !important; float: none !important; min-height: 100px !important; }
   .slick-cloned { display: none !important; }
   .slick-dots { display: none !important; } }
+.samo_container { font-family: "futurademic", Arial, sans-serif; text-transform: uppercase; font-size: 12px; }
+.samo_container table, .samo_container button, .samo_container input, .samo_container select { color: #303030; }
+.samo_container table td, .samo_container table th { font-size: inherit; }
+.samo_container .panel { box-shadow: none; background: #F2F2F2; }
+.samo_container .checklistbox { height: 16em; border: 1px solid #e0e0e0; line-height: 1.6; }
+.samo_container .checklistbox .checkbox { line-height: 24px; }
+.samo_container .checklistbox .checkbox span:before { top: 3px; }
+.samo_container .checklistbox .checkbox span:after { top: 0; }
+.samo_container .checkbox, .samo_container .radio { line-height: 1.4; }
+.samo_container .select { padding: 0 27px 0 17px; background: #FFF; min-width: 80px; box-sizing: border-box; }
+.samo_container .select input { border: none; background: none; border-radius: 0; line-height: normal; }
+.samo_container .resultset { padding: 0; }
+.samo_container .search-results { margin: 20px 0; }
+.samo_container .search-results__header { margin-bottom: 20px; }
+
+#search_tour .direction, #search_tour .user_info { width: 100%; }
+#search_tour .std { width: auto; }
+#search_tour .hotels_container td, #search_tour .hotels_container th { border: 1px solid #e0e0e0; border-width: 0 0 1px 1px; }
+#search_tour .hotels_container td:first-child, #search_tour .hotels_container th:first-child { border-left: none; padding-left: 10px; }
+#search_tour .hotels_container td:last-child, #search_tour .hotels_container th:last-child { padding-right: 10px; }
+#search_tour .hotels_container .footer { padding: 10px; }
+#search_tour .hotels_container tr:last-child td, #search_tour .hotels_container tr:last-child th { border-bottom: none; }
+#search_tour .control_townto { padding-left: 10px !important; }
+#search_tour #child_ages .select { display: inline-block; vertical-align: middle; width: 35px; min-width: 0; padding: 0; }
+#search_tour #child_ages .select input { padding-left: 0; padding-right: 0; text-align: center; width: 100%; }
+#search_tour .count .select { padding-left: 5px; padding-right: 20px; }
+#search_tour .count .select input { width: 100%; padding-left: 5px; padding-right: 20px; }
+#search_tour .footer { background: #F2F2F2; color: #303030; }
+#search_tour .footer .btn { display: block; float: none; width: 380px; margin: 20px auto 0; padding: 8px 25px 7px; color: #FFF; }
+#search_tour .footer .checkbox { margin: 10px 0 0; }
+#search_tour .footer .checkbox + .checkbox { margin-left: 20px; }
+#search_tour .header { height: 50px; line-height: 50px; }
+#search_tour .header .select { display: inline-block; vertical-align: middle; padding: 0 5px; margin: 0 5px; }
+#search_tour .header .select input { border: none; height: 100%; width: 100%; line-height: normal; margin: 0; padding: 0 5px; }
+#search_tour .programm_filter td label { line-height: 1.4; height: auto; }
+#search_tour .note_container { font-size: 10px; color: #bd904d; }
+
+.samo_container .panel, #modalContainer div.modalTitle, #logonContainer div.modalTitle { background: #F2F2F2; }
+
+div#dp-popup { border: 2px solid #d6d6d6; font-family: "futurabookc", Arial, sans-serif; }
+div#dp-popup h2 { text-transform: uppercase; }
+
+table.jCalendar { border: none; }
+table.jCalendar thead { border: none; }
+table.jCalendar thead td, table.jCalendar thead th { background: #303030; color: #F2F2F2; }
+table.jCalendar td.active { background: #bd904d; color: #FFF; }
+table.jCalendar td.noactive { background: #F2F2F2; color: #bfbfbf; }
+
 .fix-col { font-size: 0; }
 .fix-col .col-three { float: none; display: inline-block; vertical-align: top; }
 @media only screen and (max-width: 1250px) { .fix-col .col-three { padding-left: 2.5%; padding-right: 2.5%; }

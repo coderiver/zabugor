@@ -161,16 +161,25 @@ head.ready(function() {
 
 	$('.js-popup').on('click', function(event) {
 		event.stopPropagation();
-	})
+	});
 
 	$('.js-select').each(function() {
 		var val = $(this).find("select").val();
 		$(this).find(".select__value").text(val);
-	})
+	});
 	$('.js-select select').on('change', function() {
 		var val = $(this).val();
 		$(this).parents(".select").find(".select__value").text(val);
-	})
+	});
+
+	$('.js-select-text').each(function() {
+		var val = $(this).find("select option:selected").text();
+		$(this).find(".select__value").text(val);
+	});
+	$('.js-select-text select').on('change', function() {
+		var val = $(this).find('option:selected').text();
+		$(this).parents(".select").find(".select__value").text(val);
+	});
 
 	if ($('.js-raty').length > 0) {
 		$('.js-raty').each(function(){

@@ -1,0 +1,159 @@
+.samo_container
+  +demic
+  text-transform: uppercase
+  font-size: 12px
+  table,
+  button,
+  input,
+  select
+    color: $dark
+  table td,
+  table th
+    font-size: inherit
+  // table tr:first-child
+  //   td, th
+  //     padding-top: 10px !important
+  // table tr:last-child
+  //   td, th
+  //     padding-bottom: 10px !important
+  .panel
+    box-shadow: none
+    background: #F2F2F2
+  .checklistbox
+    height: 16em
+    border: 1px solid darken(#F2F2F2, 7%)
+    line-height: 1.6
+    .checkbox
+      line-height: 24px
+      span
+        &:before
+          top: 3px
+        &:after
+          top: 0
+  .checkbox,
+  .radio
+    line-height: 1.4
+  .select
+    padding: 0 27px 0 17px
+    background: #FFF
+    min-width: 80px
+    box-sizing: border-box
+    input
+      border: none
+      background: none
+      border-radius: 0
+      line-height: normal
+  .resultset
+    padding: 0
+  .search-results
+    margin: 20px 0
+  .search-results__header
+    margin-bottom: 20px
+
+
+#search_tour
+  .direction,
+  .user_info
+    width: 100%
+  .std
+    width: auto
+  .hotels_container
+    td,
+    th
+      border: 1px solid darken(#F2F2F2, 7%)
+      border-width: 0 0 1px 1px
+      &:first-child
+        border-left: none
+        padding-left: 10px
+      &:last-child
+        padding-right: 10px
+    .footer
+      padding: 10px
+    tr:last-child
+      td,
+      th
+        border-bottom: none
+  .control_townto
+    padding-left: 10px !important
+  #child_ages
+    .select
+      display: inline-block
+      vertical-align: middle
+      width: 35px
+      min-width: 0
+      padding: 0
+      input
+        padding-left: 0
+        padding-right: 0
+        text-align: center
+        width: 100%
+  .count
+    .select
+      padding-left: 5px
+      padding-right: 20px
+      input
+        width: 100%
+        padding-left: 5px
+        padding-right: 20px
+  .footer
+    background: #F2F2F2
+    color: $dark
+    .btn
+      display: block
+      float: none
+      width: 380px
+      margin: 20px auto 0
+      padding: 8px 25px 7px
+      color: #FFF
+    .checkbox
+      margin: 10px 0 0
+    .checkbox + .checkbox
+      margin-left: 20px
+  .header
+    height: 50px
+    line-height: 50px
+    .select
+      display: inline-block
+      vertical-align: middle
+      padding: 0 5px
+      margin: 0 5px
+      input
+        border: none
+        height: 100%
+        width: 100%
+        line-height: normal
+        margin: 0
+        padding: 0 5px
+  .programm_filter td label
+    line-height: 1.4
+    height: auto
+  .note_container
+    font-size: 10px
+    color: $brown
+
+
+.samo_container .panel,
+#modalContainer div.modalTitle,
+#logonContainer div.modalTitle
+  background: #F2F2F2
+
+div#dp-popup
+  border: 2px solid $border
+  +book
+  h2
+    text-transform: uppercase
+
+table.jCalendar
+  border: none
+  thead
+    border: none
+    td,th
+      background: $dark
+      color: #F2F2F2
+  td
+    &.active
+      background: $brown
+      color: #FFF
+    &.noactive
+      background: #F2F2F2
+      color: darken(#F2F2F2, 20%)

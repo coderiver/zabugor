@@ -1,0 +1,767 @@
+.samo_container table.std {
+    border-spacing: 15px;
+    width: 960px !important;
+    ruby-align: expression( runtimeStyle.rubyAlign = 'auto', cellSpacing = 15);
+}
+.samo_container table.std table{ 
+    width: 100%;
+}
+.samo_container .n2 {
+    width: 50%;
+}
+.samo_container .n3 {
+    width: 50%;
+}
+.samo_container .n4 td {
+    border-right: 1px solid #e4e4e4;
+}
+.samo_container .n4 .tdl {
+    border-right: 0px !important;
+/*    padding-top: "0.5em";*/
+}
+.samo_container .div_hotel_param table tbody td {
+    padding-top: 0px;
+}
+.samo_container span.fr_place_l, .samo_container span.fr_place_r{
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    display: table-cell;
+    height: 14px;
+    width: 21px;
+}
+
+#search_tour .stats .fr_place_l, #search_tour .stats .fr_place_r {
+    cursor: pointer;
+}
+
+.samo_container span.N{
+    background-position: -21px 0%;
+}
+.samo_container span.R{
+    background-position: -42px 0%;
+}
+.samo_container table.res th.w42 {
+    width: 155px;
+}
+.samo_container .price_legend {
+    width: 910px;
+    margin: auto;
+}
+
+.samo_container .price_legend td {
+    vertical-align: middle;
+    text-align: left;
+}
+
+.samo_container .price_legend span {
+    vertical-align: middle;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.samo_container .places {
+    width: 60px;
+    height: 30px;
+    background: url('../../pict/icons.png') no-repeat 0px 0px;
+}
+
+.samo_container .confirm_now_img {
+    width: 56px;
+    height: 20px;
+    background: #007355;
+}
+
+.samo_container .stop_sale_img {
+    width: 56px;
+    height: 20px;
+    background: #cf4848;
+}
+
+
+
+.samo_container .best_price_img {
+    width: 30px;
+    height: 30px;
+    background: url('../../pict/icons.png') no-repeat -240px 0px;
+}
+
+.samo_container .price_stats_img {
+    width: 30px;
+    height: 30px;
+    background: url('../../pict/icons.png') no-repeat -410px 0px;
+}
+
+.samo_container .payment_schedule_img {
+    width: 30px;
+    height: 30px;
+    background: url('../../pict/paymentschedule_l.png') no-repeat 8px 0px;
+}
+
+
+.samo_container .stopsale, .samo_container table.res tr.red_row td, .price_legend .red_row {
+    border-bottom: 1px solid #CC5050 !important;
+    background: #F1AFAF;
+    color: #9F4D4D !important;
+}
+
+.samo_container .stopsale, .samo_container .resultset tr.red_row td a {
+    color: #9F4D4D !important;
+}
+
+.red_row td {
+    color: #ffffff !important;
+    border-top: 1px solid #aaaaaa!important;
+    border-bottom: 1px solid #aaaaaa!important;
+}
+
+.red_row a {color: #ffffff !important;}
+.red_row a:hover {color: #ffffff !important;}
+
+.samo_container .confirm_now, .samo_container table.res tr.green_row td, .samo_container .price_legend .green_row {
+    border-bottom: 1px solid #007355 !important;
+    background: #b4ddac;
+}
+
+.conform_now_img {
+    width: 30px;
+    height: 30px;
+    background: url('../../pict/icons.png') no-repeat -380px 0px;
+}
+
+
+#search_tour td.price {
+    font-style: italic;
+}
+#search_tour td.bron, td.all_prices {
+    font-weight: bold;
+    font-style: normal;
+}
+#search_tour td.bron, #search_tour  td.stop, #search_tour td.all_prices {
+    cursor: pointer;
+}
+.samo_container table.res span.fr_place_r {
+    background-image: url('../../pict/f_right_t.png');
+}
+.samo_container table.res span.fr_place_l {
+    background-image: url('../../pict/f_left_t.png');
+
+}
+
+.samo_container .div_hotel_param {
+    width: 100%; clear: both;
+}
+
+#search_tour input.hotelsearch {
+    font-size: 13px;
+    width: 100px;
+    height: 18px;
+    line-height: 18px;
+    color: #333333;
+    border: 0;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    padding-bottom: 2px;
+}
+
+#search_tour select.spin {
+
+}
+
+#search_tour .n5 {
+    border-bottom: 1px solid #333333 !important;
+}
+
+#search_tour .n5 label{
+    display: block;
+    float: left;
+    width: 33%;
+    text-align: left !important;
+}
+
+#search_tour .n5 label input {
+    margin-right: 10px;
+}
+
+.samo_container {
+    display: block !important;
+}
+
+#search_tour input.price {
+    width: 70px;
+    margin-right: 0;
+}
+
+#child_ages, #child_ages .age {
+    visibility: hidden;
+}
+
+#child_ages .age {
+    width: 43px;
+}
+
+#search_tour td.panel {
+    vertical-align: middle;
+    border: 0 !important;
+}
+
+#child_ages td.input {
+    text-align: left;
+    padding-left: 8px;
+}
+.samo_container td.c {
+    width: auto;
+}
+
+#search_tour .crosstour {
+    cursor: pointer;
+}
+
+#search_tour label.hidden {
+  visibility: hidden;
+}
+
+#search_tour .groupbox label {
+	display: block;
+}
+
+#search_tour .groupbox label.hidden {
+	display: none !important;
+}
+
+#search_tour .groupbox.expanded label.hidden {
+    display: block !important;
+    visibility: visible;
+}
+
+#search_tour .nw .attr, #search_tour .nw .recommend, #search_tour .nw .vip, #search_tour .nw .best, #search_tour .nw .stats  {display: inline-block; width: 30px; height: 30px; background: url('../../pict/icons.png') no-repeat -380px 0px; }
+#search_tour .nw .vip {background:  url('../../pict/icons.png') no-repeat -345px 0px;}
+#search_tour .nw .best { background: url('../../pict/icons.png') no-repeat -240px 0px; display: inline-block; width: 30px; height: 30px;}
+#search_tour .nw .stats { width: 30px; margin: 0; background: url('../../pict/icons.png') no-repeat -413px 0px; cursor: pointer;}
+
+#search_tour .tour-select {
+    width: 382px !important;
+}
+
+#search_tour .w75  {
+    width: 222px;
+    width: "59%";
+}
+
+#search_tour .w25  {
+    width: 150px;
+    width: "40%";
+}
+
+#search_tour .hotels-container {
+    width: 341px !important;
+}
+#search_tour .TOWNTO {
+    width: 153px !important;
+}
+
+#chart, #chart-info {
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+}
+#chart {
+    padding-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 130px;
+    overflow: auto;
+    width: 762px !important;
+    background: #ffffff;
+}
+
+#chart-info table.res {
+    width: 762px !important;
+}
+
+table.chart {
+    margin: auto;
+}
+table.chart td {
+    vertical-align: bottom;
+}
+#chart-line-current {
+    background-color: blue;
+    display: none;
+    height: 1px;
+    position: relative;
+    width: 596px;
+}
+
+#chart td.month {
+    text-align: center;
+}
+#chart td.minprice {
+    padding-bottom: 10px;
+}
+
+#chart td.odd  {background-color: #eee;}
+#chart td.even {background-color: #ddd;}
+
+#chart td.day { font-size: 10px; text-align: center;}
+
+/*Tooltip and Pointer CSS*/
+#chart-tip {
+    padding: .8em;
+    width: 200px;
+    height: 48px;
+    border-width: 2px !important;
+    position: absolute;
+    display: none;
+    opacity: 0.95;
+}
+#chart-tip .fg-tooltip-pointer-down, #chart-tip .fg-tooltip-pointer-down-inner {
+    position: absolute;
+    width:0;
+    height:0;
+    border-bottom-width: 0;
+    background: none;
+}
+#chart-tip .fg-tooltip-pointer-down {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top-width: 14px;
+    bottom:	-14px;
+    right: auto;
+    left: 50%;
+    margin-left: -7px;
+}
+#chart-tip .fg-tooltip-pointer-down-inner {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #fff;
+    bottom:	auto;
+    top: -14px;
+    left: -5px;
+}
+
+#chart img.blue_row, #chart img.white_row, #chart img.red_row, #chart img.green_row, #chart img.blank, #chart img.pink_row {
+    margin: 1px;
+    border: solid 1px #ddd;
+}
+
+#chart-tip span.minus {color: green;}
+#chart-tip span.plus  {color: red;}
+
+#chart img.white_row {background-color: #eee !important;}
+#chart img.blue_row  {background-color: #00008b !important;}
+#chart img.red_row   {background-color: #FFAFB6;}
+#chart img.green_row {background-color: #A8CFAB;}
+#chart img.pink_row {background-color: #F5BFB2;}
+#chart td.refresh img {cursor: pointer;}
+
+#chart img.hover { background-color: #00008b !important; border: solid 1px #00008b !important;}
+
+#chart-tip span.red_row, #chart-tip span.green_row, #chart-tip span.pink_row {font-weight: bold;}
+
+#chart-tip span.red_row {color: #FFAFB6;}
+#chart-tip span.green_row {color: #A8CFAB;}
+#chart-tip span.pink_row {color: #F5BFB2;}
+
+#search_tour .STARS hr {
+    border: 0;
+    background-color: silver;
+    color: silver;
+    height: 1px;
+    padding: 0;
+}
+
+
+#search_tour td.price {
+    width: 92px;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 12px;
+}
+
+#search_tour td.price span {
+    width: 100px;
+    white-space: nowrap;
+}
+
+#search_tour div.transport, #search_tour th.transport {
+    width: 170px;
+    white-space: nowrap;
+    line-height: 17px;
+    vertical-align: middle;
+}
+
+#search_tour div.transport-short, #search_tour th.transport-short  {
+    width: 92px;
+    white-space: nowrap;
+}
+
+#search_tour div.transport span, #search_tour div.transport-short span {
+    display: inline-block;
+    line-height: 16px;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin-right: 1px;
+}
+
+#search_tour div.transport span.name, #search_tour div.transport-short span.name {
+    width: 52px;
+}
+
+#search_tour table.res span.mealnote {
+    white-space: nowrap;
+}
+#search_stat{
+    height: 500px;
+    overflow: auto;
+}
+#freights table.freights{
+    margin: auto;
+    width: 762px !important;
+}
+#freights table.freights td.td_freights{
+    padding: 0 3px 0 0;
+    width: 50%;
+}
+#freights table.freights td.td_freights.right{
+    padding-right: 0;
+    padding-left: 3px;
+}
+#freights table.res, table.nb{
+    width: 100% !important;
+}
+#freights table.nb td{
+    border: 0px !important;
+    line-height: normal !important;
+    white-space: nowrap;
+}
+#freights td.st_pl{
+    width: 75px !important;
+}
+#freights table.res td{
+    line-height: 1.7em;
+}
+#freights table.res td.no_wrap {
+    white-space: nowrap;
+}
+
+#search_tour .std{
+    margin: auto;
+    width: 910px;
+    border-spacing: 0px !important;
+}
+
+#search_tour table td, .samo_container table th{
+    font-family: inherit;
+    vertical-align: middle;
+}
+
+#search_tour table.res {
+    border: 0;
+}
+
+/* Новая таблица для Search_tour*/
+
+    /*ТАБЛИЦА 1*/
+#search_tour .direction {
+    width: 910px;
+}
+
+#search_tour .direction td {
+    padding: 5px 10px !important;
+}
+
+#search_tour .direction .direction_left {
+    width: 20% !important;
+    text-align: right;
+}
+
+#search_tour .direction .direction_right {
+    width: 30%;
+    text-align: left;
+}
+
+#search_tour .direction .tour_left {
+    width: 8% !important;
+    text-align: right;
+}
+
+#search_tour .direction .tour_right {
+    width: 42%;
+    text-align: left;
+}
+
+#search_tour .note_container {
+    color: #6688aa;
+}
+
+#search_tour .note_container strong {
+    font-weight: bold;
+}
+
+#search_tour .note_container i strong {
+    font-style: italic;
+}
+#search_tour .blank-note {
+    display: none;
+}
+
+
+    /*ТАБЛИЦА 1*/
+
+
+
+    /*ТАБЛИЦА 2*/
+#search_tour .user_info {
+    width: 910px;
+}
+
+#search_tour .user_info td {
+    padding: 3px 10px;
+}
+
+#search_tour .description, #search_tour .description2, #search_tour .description3, #search_tour .description4 {
+    width: 85px;
+    text-align: right;
+}
+#search_tour .description2 {
+    width: 95px;
+}
+#search_tour .description3 {
+    width: 65px;
+}
+#search_tour .description4 {
+    width: 50px;
+}
+#search_tour .user_info .col, #search_tour .user_info .empty {
+    padding: 0;
+}
+#search_tour .user_info .col {
+    width: 445px;
+}
+
+#search_tour .user_info .child_ages {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#search_tour #child_ages input.age {
+    display: inline-block;
+    width: 35px;
+}
+
+#search_tour .from {
+    width: 20px;
+    text-align: right;
+}
+
+#search_tour .calendar {
+    width: 125px !important;
+}
+
+#search_tour .nights{
+    width: 60px;
+}
+
+#search_tour .tourists {
+    width: 60px;
+}
+
+#search_tour #child_ages {
+    width: 120px;
+}
+#search_tour .cost {
+    width: 60px;
+}
+#search_tour .cost .select_span {
+    display: block;
+}
+
+#search_tour .count {
+    width: 70px;
+}
+
+#search_tour td.shadow {
+    padding: 0;
+}
+
+    /*ТАБЛИЦА 2*/
+
+
+
+    /*ТАБЛИЦА 3*/
+#search_tour .programm_filter {
+    width: 100%;
+}
+
+#search_tour  .programm_type_length { width: 200px;}
+
+#search_tour .programm_filter td {
+    padding: 5px 10px;
+}
+
+#search_tour .programm_filter td label{
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: left !important;
+    vertical-align: middle;
+    white-space: nowrap;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 30px;
+}
+
+#search_tour .programm_filter td label input{
+    margin: 0px 5px 2px 0px;
+    padding: 0;
+}
+    /*ТАБЛИЦА 3*/
+
+
+
+    /*ТАБЛИЦА 4*/
+#search_tour .hotels_container {
+    width: 100%;
+}
+
+#search_tour .hotels_container td {
+    padding: 5px;
+    text-align: center;
+}
+
+#search_tour .header {
+    height: 22px;
+    line-height: 22px;
+    vertical-align: middle;
+    padding: 2px 0px;
+    margin-bottom: 5px;
+}
+
+/*
+#search_tour .header label {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+*/
+
+#search_tour .header input {
+    margin-right: 5px;
+}
+
+#search_tour .header .left {
+    float: left;
+    display: inline-block;
+}
+
+#search_tour .header .right {
+    float: right;
+    display: inline-block;
+}
+
+#search_tour .footer {
+    vertical-align: middle;
+    padding: 5px 0px;
+}
+
+#search_tour .footer input {
+    margin-right: 5px;
+}
+
+#search_tour .footer .left {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 5px;
+
+}
+
+#search_tour .footer .right {
+    float: right;
+    display: inline-block;
+}
+
+/*Города*/
+#search_tour .control_townto {
+    text-align: center;
+    width: 165px !important;
+    vertical-align: top;
+    padding-left: 5px!important;
+}
+/*Города*/
+
+/*Категория*/
+#search_tour .control_stars {
+    width: 165px;
+    vertical-align: top;
+}
+/*Категория*/
+
+/*Отели*/
+#search_tour .control_hotels {
+    width: 375px;
+    vertical-align: top;
+    overflow: hidden !important;
+}
+/*Отели*/
+
+/*Питание*/
+#search_tour .control_meal {
+
+    vertical-align: top;
+}
+/*Питание*/
+
+    /*ТАБЛИЦА 4*/
+
+#search_tour .price_button {
+    background-image: url('../../pict/bg_btn.png') !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #444444 !important;
+}
+
+#search_tour .price_button:hover {
+    background-image: url('../../pict/bg_btn_hover.png') !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #444444 !important;
+}
+
+#search_tour .price_button:active {
+    background-image: url('../../pict/bg_btn_active.png') !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.statistic {
+    width: 30px;
+    text-align: center;
+
+}
+
+#search_tour .w380 {
+    width: 380px;
+    overflow-x: hidden;
+}
+
+.empty_cell {
+    width: 10px;
+}
+
+#search_tour .sortie {
+    white-space: nowrap;
+}
+#search_tour .sortie img {
+    position: relative;
+    bottom: -3px;
+}
+#search_tour .sortie span {
+    background: url(../../pict/freight.gif) 0px 2px no-repeat;
+    padding: 0 0 0 15px;
+}
+#search_tour td .popup-note.ui-icon-info {
+    margin-bottom: -3px;
+}
+
+/* Новая таблица для Search_tour*/

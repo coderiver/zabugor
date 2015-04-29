@@ -1,0 +1,1013 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=1024">
+	<link rel="stylesheet" media="all" href="css/common.css" >
+	<link rel="stylesheet" media="all" href="css/3_search_tour.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<link rel="SHORTCUT ICON" href="img/favicon.ico">
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- BEGIN header -->
+	<header class="header">
+		<div class="l-center header__main">
+			<div class="header__left">
+				<a href="#" class="btn">Агенствам</a>
+				<button class="menu-key js-menu-key">
+					<i></i>
+					<span>меню</span>
+				</button>
+				<div class="header__lang">
+					<a href="#">eng</a>
+					<!-- <a href="#">ru</a> -->
+				</div>
+				<div class="header__nav">
+					<a href="#">Лучшие предложения </a>
+					<a href="#">Индивидуальные туры</a>
+					<a href="#">Я хочу</a>
+				</div>
+			</div>
+			<a class="header__logo" href="#">
+				Zabugor.com - Клуб роскошных путешествий
+			</a>
+			<div class="header__right">
+				<div class="tel">
+					<i>T</i>
+					<span>38044 545 4555</span>
+				</div>
+				<a href="#" class="btn">Агенствам</a>
+				<div class="header__nav">
+					<a href="#">Подарки и акции</a>
+					<a href="#">Рейтинги и тренды</a>
+					<a href="#">Страны и острова</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav js-nav">
+			<div class="l-center">
+				<a href="#" class="nav__logo"></a>
+				<div class="nav__main">
+					<a href="#">Лучшие предложения</a>
+					<a href="#">Индивидуальные туры</a>
+					<a href="#">Я хочу</a>
+					<a href="#">Подарки и акции</a>
+					<a href="#">Рейтинги и тренды</a>
+					<a href="#">Страны и острова</a>
+				</div>
+				<button class="menu-key js-menu-key">
+					<span>меню</span>
+					<i></i>
+				</button>
+			</div>
+		</div>
+		<div class="menu js-menu">
+			<div class="menu__in">
+				<div class="menu__list">
+					<ul>
+						<li><a href="#">Лучшие предложения</a></li>
+						<li><a href="#">Индивидуальные</a></li>
+						<li><a href="#">Я хочу</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Подарки и</a></li>
+						<li><a href="#">Рейтинги и</a></li>
+						<li><a href="#">Страны и острова</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Новости и публикации </a></li>
+						<li><a href="#">Как оплатить</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Наши услуги</a></li>
+						<li><a href="#">Деловой туризм</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="menu__action">
+					<a href="#" class="btn">Агенствам</a>
+					<button class="btn-close js-menu-close"></button>
+					<div class="header__lang">
+						<a href="#">eng</a>
+						<a href="#" class="is-active">ru</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay-menu js-overlay-menu"></div>
+	</header>
+	<!-- END header-->
+
+
+
+	<!-- BEGIN search tour -->
+	<div class="l-center">
+
+		<!-- <div id="header">
+			<a href="http://samo.ru" title='"САМО-Софт" - автоматизация доступна.'>
+				<img src="/public/pict/samo.png" width="144" height="66" alt='САМО-софт' class="logo"/>
+			</a>
+			<div class="header_top">
+				<div style="width: 60em; float: right;">
+					<nobr><a href="/search_tour?" rel="bookmark" title="Поиск тура" >Поиск тура</a> |</nobr>
+					<nobr><a href="/hotel_stopsale?" rel="bookmark" title="Остановки продаж в гостиницах">Остановки продаж в гостиницах</a> |</nobr>
+					<nobr><a href="/freight_monitor?" rel="bookmark" title="Наличие мест на рейсах" >Наличие мест на рейсах</a> |</nobr>
+					<nobr><a href="/cl_refer?" rel="bookmark" title="Просмотр заявок" >Просмотр заявок</a> |</nobr>
+					<nobr><a href="/messages?" rel="bookmark" title="Сообщения" >Сообщения</a> |</nobr>
+					<nobr><a href="/edit_agency?" rel="bookmark" title="Редактирование партнера" >Редактирование партнера</a> |</nobr>
+					<nobr><a href="/the_best?" rel="bookmark" title="Лучшие спецпредложения" >Лучшие спецпредложения</a> |</nobr>
+					<nobr><a href="/freight_time?" rel="bookmark" title="Расписание рейсов" >Расписание рейсов</a> </nobr>
+				</div>
+			</div>
+		</div> -->
+
+		<div class="samo_container" data-csrf-token="701dcc39097b743f855e31837109bb21">
+			<div class="eraser"></div>
+
+			<div id="search_tour">
+				<div class="note"></div>
+				<div class="std container">
+					<table class="direction panel">
+						<tr>
+							<td class="direction_left">город отправления</td>
+							<td class="direction_right">
+								<div class="select js-select-text">
+									<span class="select__value"></span>
+									<i class="select__ico"></i>
+									<select name="TOWNFROMINC" class="TOWNFROMINC"  autocomplete="off" >
+										<option value="6" selected>Киев</option>
+									</select>
+								</div>
+							</td>
+							<td class="tour_left">тур</td>
+							<td class="tour_right">
+								<div class="select js-select-text">
+									<span class="select__value"></span>
+									<i class="select__ico"></i>
+									<select name="TOURINC" class="TOURINC"  autocomplete="off" >
+										<option value="0">----</option>
+										<option value="14">США (Наземное обслуживание)</option>
+										<option value="12">США (Экскурсионные туры)</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="direction_left">страна</td>
+							<td class="direction_right">
+								<div class="select js-select-text">
+									<span class="select__value"></span>
+									<i class="select__ico"></i>
+									<select name="STATEINC"  class="STATEINC"  autocomplete="off" ><option value="27" >Индонезия
+										</option><option value="9" >Маврикий</option>
+										<option value="6" >Мальдивы</option>
+										<option value="8" selected>США</option>
+										<option value="22" >Сейшелы</option>
+										<option value="29" >Тайланд</option><option value="24" >Япония</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="5" class="note_container blank-note"></td>
+						</tr>
+					</table>
+
+					<table class="user_info">
+						<tr>
+							<td class="col">
+								<table class="panel">
+									<tr>
+										<td class="description">вылет от</td>
+										<td class="calendar">
+											<div class="select">
+												<i class="select__ico select__ico_calendar"></i>
+												<input type="text" name="CHECKIN_BEG" class="frm-input date CHECKIN_BEG js-datepicker" autocomplete="off" data-calendar='{"valid": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111","start": "28.04.2015"}' value="28.04.2015"/>
+											</div>
+										</td>
+										<td class="description2">ночей от</td>
+										<td class="nights">
+											<div class="select js-select-text">
+												<span class="select__value"></span>
+												<i class="select__ico"></i>
+												<select name="NIGHTS_FROM" class="NIGHTS_FROM spin" autocomplete="off">
+													<option value="1"selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14">14</option>
+													<option value="15">15</option>
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option value="18">18</option>
+													<option value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+													<option value="25">25</option>
+													<option value="26">26</option>
+													<option value="27">27</option>
+													<option value="28">28</option>
+													<option value="29">29</option>
+													<option value="30">30</option>
+													<option value="31">31</option>
+												</select>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="description">до</td>
+										<td class="calendar">
+											<div class="select">
+												<i class="select__ico select__ico_calendar"></i>
+												<input type="text" class="frm-input date CHECKIN_END js-datepicker" autocomplete="off" name="CHECKIN_END" data-calendar='{"valid": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111","start": "28.04.2015"}'  value="29.04.2015"/>
+											</div>
+										</td>
+										<td class="description2">до</td>
+										<td class="nights">
+											<div class="select js-select-text">
+												<span class="select__value"></span>
+												<i class="select__ico"></i>
+												<select name="NIGHTS_TILL" class="NIGHTS_TILL spin" autocomplete="off">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14"selected>14</option>
+													<option value="15">15</option>
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option value="18">18</option>
+													<option value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+													<option value="25">25</option>
+													<option value="26">26</option>
+													<option value="27">27</option>
+													<option value="28">28</option>
+													<option value="29">29</option>
+													<option value="30">30</option>
+													<option value="31">31</option>
+												</select>
+											</div>
+										</td>
+									</tr>
+								</table>
+							<td class="empty">&nbsp;</td>
+							<td class="col">
+								<table class="panel">
+									<tr>
+										<td class="description3">взрослых</td>
+										<td class="tourists">
+											<div class="select js-select-text">
+												<span class="select__value"></span>
+												<i class="select__ico"></i>
+												<select name="ADULT" class="ADULT spin" autocomplete="off">
+													<option value="1">1</option>
+													<option value="2"selected>2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</div>
+										</td>
+										<td class="description4">
+											<span class="currency_label">цена</span>
+										</td>
+										<td class="cost">
+											<div class="select js-select-text">
+												<span class="select__value"></span>
+												<i class="select__ico"></i>
+												<select class="CURRENCY" name="CURRENCY" autocomplete="off">
+													<option value="5" selected>USD</option><option value="4" >ГРН</option>
+												</select>
+											</div>
+										</td>
+										<td class="from">от</td>
+										<td class="count">
+											<div class="select">
+												<input type="text" data-currency="5" name="PRICE_MIN" value="" class="frm-input price PRICE_MIN" data-value=""  autocomplete="off">
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="description3">детей</td>
+										<td class="tourists">
+											<div class="select js-select-text">
+												<span class="select__value"></span>
+												<i class="select__ico"></i>
+												<select name="CHILD" class="CHILD spin"  autocomplete="off" >
+													<option value="0" selected>0</option>
+													<option value="1" >1</option>
+													<option value="2" >2</option>
+													<option value="3" >3</option></select>
+												</td>
+											</div>
+										<td class="child_ages" colspan="2">
+											<div id="child_ages">
+												<div class="select">
+													<input type="text" maxlength="2" class="frm-input age" id="age_1" autocomplete="off" name="AGE1" value="">
+												</div>
+												&nbsp;
+												<div class="select">
+													<input type="text" maxlength="2" class="frm-input age" id="age_2" autocomplete="off" name="AGE2" value="">
+												</div>
+												&nbsp;
+												<div class="select">
+													<input maxlength="2" type="text" class="frm-input age" id="age_3" autocomplete="off" name="AGE3" value="">
+												</div>
+											</td>
+										<td class="from">до</td>
+										<td class="count">
+											<div class="select">
+												<input type="text" data-currency="5" data-value="" name="PRICE_MAX"  autocomplete="off" value=""  class="frm-input price PRICE_MAX">
+											</div>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+
+					<table class="programm_filter panel">
+						<tr>
+							<td>
+								<label id="subfilter0" class="hidden radio">
+									<input type="radio" name="SUBFILTER" value="0"  autocomplete="off" id="FULLPACKET">
+									<span>Полный пакет</span>
+								</label>
+								<label id="subfilter1" class="radio">
+									<input type="radio" name="SUBFILTER" value="1" checked="checked" autocomplete="off">
+									<span>Только проживание</span>
+								</label>
+								<label id="subfilter2" class="hidden radio">
+									<input type="radio" name="SUBFILTER" value="2"  id="NOHOTELS" autocomplete="off">
+									<span>Только перелёт</span>
+								</label>
+							</td>
+						</tr>
+					</table>
+
+					<table class="hotels_container panel">
+						<tr>
+							<td class="control_townto">
+								<div class="header">
+										<span class="left">город</span>
+										<span class="right">
+											<label class="checkbox">
+												<input type="checkbox" name="TOWNTO_ANY" class="TOWNTO_ANY" checked="checked">
+												<span>любой</span>
+											</label>
+										</span>
+								</div>
+								<div class="checklistbox TOWNTO" name="TOWNTO">
+									<div class="groupbox">
+										<label class="groupname checkbox">
+											<input type="checkbox" class="group"/>
+											<span>США</span>
+										</label>
+										<label class="hidden checkbox">
+											<input type="checkbox" value="9" />
+											<span>Вашингтон</span>
+										</label>
+										<label class="hidden checkbox">
+											<input type="checkbox" value="12" />
+											<span>Лос-Анджелес</span>
+										</label>
+										<label class="hidden checkbox">
+											<input type="checkbox" value="426" />
+											<span>Мауи (Гавайи)</span>
+										</label>
+										<label class="hidden checkbox">
+											<input type="checkbox" value="8" />
+											<span>Маями</span>
+										</label>
+										<label class="hidden checkbox">
+											<input type="checkbox" value="7" />
+											<span>Нью-Йорк</span>
+										</label>
+										<label class="hidden checkbox">
+											<input type="checkbox" value="13"/>
+											<span>Орландо</span>
+										</label>
+									</div>
+								</div>
+							</td>
+							<td class="control_stars">
+								<div class="header">
+										<span class="left">категория</span>
+										<span class="right">
+											<label class="checkbox">
+												<input type="checkbox" name="STARS_ANY" class="STARS_ANY" checked="checked">
+												<span>любая</span>
+											</label>
+										</span>
+								</div>
+								<div class="checklistbox STARS" name="STARS">
+									<label class="checkbox">
+										<input type="checkbox" class="star" value="2"/>
+										<span>3*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" class="star" value="3"/>
+										<span>4*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" class="star" value="4"/>
+										<span>5*</span>
+									</label>
+								</div>
+							</td>
+							<td class="control_hotels">
+								<div class="header">
+										<span class="left">
+											гостиница
+											<div class="select">
+												<input type="text" name="hotelsearch"  autocomplete="off" class="hotelsearch">
+											</div>
+											<label class="checkbox">
+												<input type="checkbox" name="HOTELS_SEL" class="HOTELS_SEL"  autocomplete="off">
+												<span>выбранные</span>
+											</label>
+										</span>
+										<span class="right">
+											<label class="checkbox">
+												<input type="checkbox" name="HOTELS_ANY" class="HOTELS_ANY" checked="checked">
+												<span>любая</span>
+											</label>
+										</span>
+								</div>
+								<div class="checklistbox HOTELS w380" name="HOTELS">
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="4" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="5607" />
+										<span>ACQUALINA RESORT&SPA ON THE BEACH(SUPERIOR DELUXE) 5*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="2" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="5701" />
+										<span>COURTYARD BY MARIOTT MIAMI BEACH OCEANFRONT(FIRST) 3*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="3" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3996" />
+										<span>DELANO (SUPERIOR FIRST) 4*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="3" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3997" />
+										<span>EDEN ROC MIAMI BEACH (SUPERIOR FIRST) 4*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="3" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="4002" />
+										<span>FONTAINEBLEAU MIAMI BEACH(DELUXE) 4*+</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="2" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3988" />
+										<span>FOUR POINTS BY SHERATON MIAMI BEACH (FIRST) 3*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="3" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="4004" />
+										<span>LOEWS MIAMI BEACH HOTEL(DELUXE) 4*+</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="2" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3990" />
+										<span>MIAMI BEACH RESORT&SPA(SUPERIOR FIRST) 3*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="2" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3989" />
+										<span>NEWPORT BEACHSIDE HOTEL&RESORT (FIRST) 3*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="3" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="5702" />
+										<span>SHELBORNE WYNDHAM GRAND SOUTH BEACH(SUPERIOR FIRST) 4*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="3" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="4000" />
+										<span>SLS HOTEL SOUTH BEACH(DELUXE) 4*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="3" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3998" />
+										<span>SOLE ON THE OCEAN (SUPERIOR FIRST) 4*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="426" data-group-star="3" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="5715" />
+										<span>THE FAIRMONT KEA LANI 4* Superior</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="3" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="4003" />
+										<span>THE JAMES ROYAL PALM(DELUXE) 4*+</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="3" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3999" />
+										<span>THE PALMS HOTEL&SPA (SUPERIOR FIRST) 4*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="4" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="5703" />
+										<span>THE RITZ-CARLTON BAL HARBOUR, MIAMI(SUPERIOR DELUXE) 5*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="4" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="5697" />
+										<span>THE RITZ-CARLTON SOUTH BEACH(SUPERIOR DELUXE) 5*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="4" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="5699" />
+										<span>THE SETAI(SUPERIOR DELUXE) 5*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="4" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="5700" />
+										<span>THE ST. REGIS BAL HARBOUR RESORT (SUPERIOR DELUXE) 5*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="3" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="4001" />
+										<span>TRUMP INTERNATIONAL BEACH RESORT(DELUXE) 4*</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="3" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="4005" />
+										<span>W SOUTH BEACH(DELUXE) 4*+</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="12" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3979" />
+										<span>Авторский Тур Евгения Баранова None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="7" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="7" />
+										<span>Американский Калейдоскоп None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="7" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3975" />
+										<span>Волшебный Коктейль None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="7" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3976" />
+										<span>Волшебный Коктейль + Круиз None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="9" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3981" />
+										<span>Восточное Побережье США и Канада None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="12" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="18" />
+										<span>Вся Америка None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="9" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3986" />
+										<span>Вся Америка (другой) None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="12" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="19" />
+										<span>Голливудские Каникулы None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="12" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3982" />
+										<span>Западный Мираж  None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="7" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3983" />
+										<span>Йеллоустон, Гранд-Тетон, Гора Рашмор None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="12" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="21" />
+										<span>Краски Дикого Запада None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="12" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3984" />
+										<span>Красоты Юго-Запада США — VIP Package None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="12" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3985" />
+										<span>Красоты Юго-Запада США — Автобусный Тур None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="12" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="20" />
+										<span>Мир кино и казино None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="7" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="17" />
+										<span>Нью-Йорк, Нью-Йорк None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="13" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="10" />
+										<span>Океан и лучшие парки мира None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="12" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="22" />
+										<span>От Калифорнии к Гавайям None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="8" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="11" />
+										<span>Пляжи Майами None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="7" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="16" />
+										<span>Северное Созвездие None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="7" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="9" />
+										<span>Юго-Восточное Созвездие None</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" data-town="12" data-group-star="" data-type="8,9,10,16,17,18,19,25,29,35,45,46,47,48,49,50,51,52,53,54,55,56"  value="3987" />
+										<span>Южное Сияние None</span>
+									</label>
+								</div>
+							</td>
+							<td class="control_meal">
+								<div class="header">
+										<span class="left">питание</span>
+										<span class="right">
+											<label class="checkbox">
+												<input type="checkbox" name="MEAL_ANY" class="MEAL_ANY" checked="checked">
+												<span>любое</span>
+											</label>
+										</span>
+								</div>
+								<div class="checklistbox MEAL" name="MEAL">
+									<label class="checkbox">
+										<input type="checkbox" value="1" />
+										<span>BB</span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="7" class="footer">
+								<label class="left checkbox">
+									<input type="checkbox" class="FREIGHT" name="FREIGHT"  autocomplete="off">
+									<span>есть места на рейсы</span>
+								</label>
+								<label class="left checkbox">
+									<input type="checkbox" class="FILTER" name="FILTER"   autocomplete="off">
+									<span>нет остановки продажи</span>
+								</label>
+								<button class="load right btn btn_big" disabled="disabled">Искать</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<!-- BEGIN search-results -->
+				<div class="search-results">
+					<div class="search-results__header">
+						<div class="two-col">
+							<div class="col1">
+								<table class="search-results__info">
+									<tr>
+										<td><img src="img/icons/icon-1.png"></td>
+										<td>есть места / нет мест / по запросу</td>
+									</tr>
+									<tr>
+										<td><img src="img/icons/icon-2.png"></td>
+										<td>мгновенное подтверждение</td>
+									</tr>
+									<tr>
+										<td><img src="img/icons/icon-3.png"></td>
+										<td>остановка продаж</td>
+									</tr>
+								</table>
+							</div>
+							<div class="col2">
+								<table class="search-results__info">
+									<tr>
+										<td><img src="img/icons/badge.png"></td>
+										<td>Лучшее предложение</td>
+									</tr>
+									<tr>
+										<td><img src="img/icons/dynamic.png"></td>
+										<td>Динамика цены, наличие мест на рейсы</td>
+									</tr>
+									<tr>
+										<td><img src="img/icons/clock.png"></td>
+										<td>Возможна рассрочка платежей</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="resultset">
+					<div class="search-results">
+						<table class="search-results__table">
+							<thead>
+								<tr>
+									<td>Заезд</td>
+									<td>Тур</td>
+									<td>Ночей</td>
+									<td>Гостиница</td>
+									<td>Питание</td>
+									<td>Номер / Размещение</td>
+									<td></td>
+									<td>Цена</td>
+									<td>Тип цены</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>14.14.14 Вс</td>
+									<td>Маврикий</td>
+									<td>5</td>
+									<td>IRUFUSHI BEACH & SPA RESORT (ex.THE HILTON MALDIVES)</td>
+									<td>Полупансион</td>
+									<td>Ocean Wave Deluxe Roome / DBL</td>
+									<td>
+										<img src="img/icons/dynamic-inactive.png">
+										<img src="img/icons/dynamic.png">
+										<img src="img/icons/badge.png">
+									</td>
+									<td><b>84561 грн</b></td>
+									<td>MAV-1.1-EBA-60</td>
+								</tr>
+								<tr>
+									<td>14.14.14 Вс</td>
+									<td>Маврикий</td>
+									<td>5</td>
+									<td>IRUFUSHI BEACH & SPA RESORT (ex.THE HILTON MALDIVES)</td>
+									<td>Полупансион</td>
+									<td>Ocean Wave Deluxe Roome / DBL</td>
+									<td><img src="img/icons/dynamic-inactive.png" alt=""></td>
+									<td><b>84561 грн</b></td>
+									<td>MAV-1.1-EBA-60</td>
+								</tr>
+								<tr>
+									<td>14.14.14 Вс</td>
+									<td>Маврикий</td>
+									<td>5</td>
+									<td>IRUFUSHI BEACH & SPA RESORT (ex.THE HILTON MALDIVES)</td>
+									<td>Полупансион</td>
+									<td>Ocean Wave Deluxe Roome / DBL</td>
+									<td>
+										<img src="img/icons/clock.png">
+									</td>
+									<td><b>84561 грн</b></td>
+									<td>MAV-1.1-EBA-60</td>
+								</tr>
+								<tr>
+									<td>14.14.14 Вс</td>
+									<td>Маврикий</td>
+									<td>5</td>
+									<td>IRUFUSHI BEACH & SPA RESORT (ex.THE HILTON MALDIVES)</td>
+									<td>Полупансион</td>
+									<td>Ocean Wave Deluxe Roome / DBL</td>
+									<td><img src="img/icons/dynamic-inactive.png" alt=""></td>
+									<td><b>84561 грн</b></td>
+									<td>MAV-1.1-EBA-60</td>
+								</tr>
+								<tr>
+									<td>14.14.14 Вс</td>
+									<td>Маврикий</td>
+									<td>5</td>
+									<td>IRUFUSHI BEACH & SPA RESORT (ex.THE HILTON MALDIVES)</td>
+									<td>Полупансион</td>
+									<td>Ocean Wave Deluxe Roome / DBL</td>
+									<td><img src="img/icons/dynamic-inactive.png" alt=""></td>
+									<td><b>84561 грн</b></td>
+									<td>MAV-1.1-EBA-60</td>
+								</tr>
+								<tr>
+									<td>14.14.14 Вс</td>
+									<td>Маврикий</td>
+									<td>5</td>
+									<td>IRUFUSHI BEACH & SPA RESORT (ex.THE HILTON MALDIVES)</td>
+									<td>Полупансион</td>
+									<td>Ocean Wave Deluxe Roome / DBL</td>
+									<td><img src="img/icons/dynamic-inactive.png" alt=""></td>
+									<td><b>84561 грн</b></td>
+									<td>MAV-1.1-EBA-60</td>
+								</tr>
+								<tr>
+									<td>14.14.14 Вс</td>
+									<td>Маврикий</td>
+									<td>5</td>
+									<td>IRUFUSHI BEACH & SPA RESORT (ex.THE HILTON MALDIVES)</td>
+									<td>Полупансион</td>
+									<td>Ocean Wave Deluxe Roome / DBL</td>
+									<td><img src="img/icons/dynamic-inactive.png" alt=""></td>
+									<td><b>84561 грн</b></td>
+									<td>MAV-1.1-EBA-60</td>
+								</tr>
+								<tr>
+									<td>14.14.14 Вс</td>
+									<td>Маврикий</td>
+									<td>5</td>
+									<td>IRUFUSHI BEACH & SPA RESORT (ex.THE HILTON MALDIVES)</td>
+									<td>Полупансион</td>
+									<td>Ocean Wave Deluxe Roome / DBL</td>
+									<td><img src="img/icons/dynamic-inactive.png" alt=""></td>
+									<td><b>84561 грн</b></td>
+									<td>MAV-1.1-EBA-60</td>
+								</tr>
+								<tr>
+									<td>14.14.14 Вс</td>
+									<td>Маврикий</td>
+									<td>5</td>
+									<td>IRUFUSHI BEACH & SPA RESORT (ex.THE HILTON MALDIVES)</td>
+									<td>Полупансион</td>
+									<td>Ocean Wave Deluxe Roome / DBL</td>
+									<td><img src="img/icons/dynamic-inactive.png" alt=""></td>
+									<td><b>84561 грн</b></td>
+									<td>MAV-1.1-EBA-60</td>
+								</tr>
+								<tr>
+									<td>14.14.14 Вс</td>
+									<td>Маврикий</td>
+									<td>5</td>
+									<td>IRUFUSHI BEACH & SPA RESORT (ex.THE HILTON MALDIVES)</td>
+									<td>Полупансион</td>
+									<td>Ocean Wave Deluxe Roome / DBL</td>
+									<td><img src="img/icons/dynamic-inactive.png" alt=""></td>
+									<td><b>84561 грн</b></td>
+									<td>MAV-1.1-EBA-60</td>
+								</tr>
+								<tr>
+									<td>14.14.14 Вс</td>
+									<td>Маврикий</td>
+									<td>5</td>
+									<td>IRUFUSHI BEACH & SPA RESORT (ex.THE HILTON MALDIVES)</td>
+									<td>Полупансион</td>
+									<td>Ocean Wave Deluxe Roome / DBL</td>
+									<td><img src="img/icons/dynamic-inactive.png" alt=""></td>
+									<td><b>84561 грн</b></td>
+									<td>MAV-1.1-EBA-60</td>
+								</tr>
+								<tr>
+									<td>14.14.14 Вс</td>
+									<td>Маврикий</td>
+									<td>5</td>
+									<td>IRUFUSHI BEACH & SPA RESORT (ex.THE HILTON MALDIVES)</td>
+									<td>Полупансион</td>
+									<td>Ocean Wave Deluxe Roome / DBL</td>
+									<td><img src="img/icons/dynamic-inactive.png" alt=""></td>
+									<td><b>84561 грн</b></td>
+									<td>MAV-1.1-EBA-60</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- END search-results -->
+
+
+			</div>
+
+			<script type="text/javascript" charset="windows-1251" src="/public/js/pack.main.js?rev=392242979"></script>
+			<script type="text/javascript" charset="windows-1251" src="/public/js/page_callback.js?rev=392242979"></script>
+			<script charset="windows-1251" type="text/javascript">
+				(function(){if (typeof samo === "undefined") { samo = {}; }samo.ROOT_URL = '/search_tour?';samo.CROSS_RATES = {3:{'Inc':3,'Name':'EUR',4:26,5:1.25},4:{'Inc':4,'Name':'ГРН',3:0.04,5:0.04},5:{'Inc':5,'Name':'USD',3:1.08,4:24}};if (typeof Date.format == "undefined") {Date.format = 'dd.mm.yyyy';};if (typeof Date.mask == "undefined") {Date.mask = '39.19.2099';};var __TEMP__ = {'WWWROOT':'/','search_tour':{'url':'/search_tour?','title':'Поиск тура','public':true},'hotel_stopsale':{'url':'/hotel_stopsale?','title':'Остановки продаж в гостиницах','public':true},'freight_monitor':{'url':'/freight_monitor?','title':'Наличие мест на рейсах','public':true},'cl_refer':{'url':'/cl_refer?','title':'Просмотр заявок','public':true},'messages':{'url':'/messages?','title':'Сообщения','public':true},'edit_agency':{'url':'/edit_agency?','title':'Редактирование партнера','public':true},'bron':{'url':'/bron?','title':'Информация о заявке','public':false},'the_best':{'url':'/the_best?','title':'Лучшие спецпредложения','public':true},'freight_time':{'url':'/freight_time?','title':'Расписание рейсов','public':true}}; samo.ROUTES = (typeof samo.ROUTES == "undefined") ? __TEMP__ : samo.jQuery.extend(true,samo.ROUTES,__TEMP__); if (typeof samo != "undefined" && typeof samo.page_callback != "undefined") {samo.page_callback('search_tour','default_action',{'TOWNFROMINC':6,'STATEINC':8});};})();
+			</script>
+			<script type="text/javascript" charset="windows-1251" src="/public/js/search_tour/3_search_tour.js?rev=392242979"></script>
+		</div>
+		<noscript><h1 class="error">Для дальнейшей работы необходимо включить javascript.</h1></noscript>
+		<div class="samosoft">
+			<a href="http://www.samo.ru" target="_blank">&copy;&nbsp;САМО-Софт</a>
+		</div>
+
+	</div>
+	<!-- END search tour -->
+
+
+
+
+</div>
+<!-- END out-->
+<!-- BEGIN footer -->
+<div class="footer">
+	<div class="l-center">
+		<div class="footer__top">
+			<div class="footer__subscribe">
+				<span>Если хочешь узнавать первым про все новые рейтинги и акции</span>
+				<a href="#" class="link link_simple">подпишись на рассылку</a>
+			</div>
+			<div class="footer__currency">
+				<span>Курс валют на <em>30.01.2014</em></span>
+				<span>1 USD = 8,65 UAH</span>
+				<span>1 EUR = 11,80 UAH</span>
+			</div>
+		</div>
+		<div class="footer__main">
+			<div class="col-two">
+				<ul class="footer__nav">
+					<li>
+						<div><a href="#" class="fotter__link">Наши страны и острова</a></div>
+						<ul>
+							<li><a href="#">Мальдивы</a></li>
+							<li><a href="#">Сейшелы</a></li>
+							<li><a href="#">Мексика</a></li>
+							<li><a href="#">Доминикана /Куба</a></li>
+							<li><a href="#">Маврикий</a></li>
+							<li><a href="#">США</a></li>
+							<li><a href="#">Карибские острова</a></li>
+							<li><a href="#">ОАЭ</a></li>
+							<li><a href="#">Таиланд</a></li>
+							<li><a href="#">Шри-Ланка</a></li>
+							<li><a href="#">Керала</a></li>
+							<li><a href="#">Африка (Кения, ЮАР)</a></li>
+							<li><a href="#">Индонезия</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Китай</a></li>
+							<li><a href="#">Великобритания</a></li>
+							<li><a href="#">Франция</a></li>
+							<li><a href="#">Лазурка</a></li>
+							<li><a href="#">Италия</a></li>
+							<li><a href="#">Швейцария,</a></li>
+							<li><a href="#">Голландия</a></li>
+							<li><a href="#">Португалия</a></li>
+							<li><a href="#">Французская Полинезия</a></li>
+							<li><a href="#">Япония</a></li>
+							<li><a href="#">Австралия</a></li>
+							<li><a href="#">Новая Зеландия</a></li>
+							<li><a href="#">Фиджи</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="col-two">
+				<div class="col-two">
+					<ul class="footer__nav">
+						<li><a href="#">Лучшие предложения</a></li>
+						<li><a href="#">Индивидуальные туры</a></li>
+						<li><a href="#">Я хочу</a></li>
+						<li><a href="#">Подарки и акции</a></li>
+						<li><a href="#">Рейтинги и тредны</a></li>
+						<li><a href="#">Наши услуги</a></li>
+						<li><a href="#">Корпоративное обслуживание</a></li>
+					</ul>
+					<a href="#" class="link  link_simple">Агенствам</a>
+					<div class="footer__soc-link">
+						Следите за нами на <a href="#">facebook</a>
+					</div>
+				</div>
+				<div class="col-two">
+					<ul class="footer__nav footer__nav-width">
+						<li>
+							<div><a href="#">О компании</a></div>
+							<ul>
+								<li><a href="#">История</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Менеджеры по направлениям</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</li>
+						<li><div><a href="#">Как оплатить</div></a></li>
+					</ul>
+					<img src="img/iata.png" alt="img">
+					<div class="tel">
+						<i>T</i>
+						<span>38044 545 4555</span>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__copy">
+				<a href="#"><img src="img/logo-small.png" alt="img"></a>
+				2014 © Zabugor.com. Все права защищены.
+			</div>
+			<div class="footer__created">
+				Разработка сайта студия
+				<a href="#" class="vintage-logo"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END footer -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
