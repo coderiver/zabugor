@@ -74,7 +74,7 @@ a { text-decoration: none; }
 .header { text-transform: uppercase; font-family: "futurademic", Arial, sans-serif; }
 .header__main { position: relative; padding: 31px 0 18px; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; -moz-transform: translateY(0); -ms-transform: translateY(0); -webkit-transform: translateY(0); transform: translateY(0); }
 .header a { color: #101010; }
-.header__logo { display: block; margin: 0 auto; background: url('../img/icons-s18fb6f14cc.png') 0 -856px no-repeat; width: 219px; height: 105px; font: 0/0 a; text-shadow: none; color: transparent; }
+.header__logo { display: block; margin: 5px auto 15px; background: url('../img/logo-s3737015d09.png') 0 -163px no-repeat; width: 220px; height: 57px; font: 0/0 a; text-shadow: none; color: transparent; }
 .header__left { position: absolute; left: 40px; top: 0; padding-top: 25px; }
 .header__left .header__nav { padding-top: 23px; }
 .header__left .btn { display: none; margin-right: 26px; }
@@ -123,7 +123,7 @@ a { text-decoration: none; }
 .nav .menu-key { position: absolute; top: 20px; right: 24px; }
 @media only screen and (max-width: 1250px) { .nav .menu-key { right: 0; } }
 .nav .menu-key span { margin: 0 7px 0 0; color: #bd904d; }
-.nav__logo { float: left; margin-top: 6px; background: url('../img/icons-s18fb6f14cc.png') 0 -706px no-repeat; width: 147px; height: 38px; }
+.nav__logo { float: left; margin-top: 6px; background: url('../img/logo-s3737015d09.png') 0 0 no-repeat; width: 147px; height: 38px; }
 .nav__main { position: relative; overflow: hidden; text-align: right; font-size: 0; padding-right: 105px; }
 @media only screen and (max-width: 1250px) { .nav__main { display: none; } }
 .nav__main a { display: inline-block; vertical-align: middle; height: 35px; line-height: 35px; margin-left: 25px; font-size: 12px; color: #101010 !important; text-transform: uppercase; font-family: "futurademic", Arial, sans-serif; -moz-transition: color 0.2s linear; -o-transition: color 0.2s linear; -webkit-transition: color 0.2s linear; transition: color 0.2s linear; }
@@ -562,7 +562,7 @@ a { text-decoration: none; }
 .index-page .header__left .menu-key i:before, .index-page .header__left .menu-key i:after { background: #fff; }
 .index-page .header__nav a:after, .index-page .header__nav a:before { background: #fff; background: rgba(255, 255, 255, 0.6); }
 .index-page .header__lang a:before, .index-page .header__lang a:after { background: #fff; background: rgba(255, 255, 255, 0.6); }
-.index-page .header__logo { background: url('../img/icons-s18fb6f14cc.png') 0 -507px no-repeat; width: 219px; height: 73px; margin-top: 2px; }
+.index-page .header__logo { background: url('../img/logo-s3737015d09.png') 0 -96px no-repeat; width: 220px; height: 57px; margin-top: 2px; }
 .index-page .menu-key span { color: #fff; }
 .index-page .header__main .btn { background: #fff; color: #101010; border: 2px solid #fff; }
 .index-page .header__main .btn:hover { color: #fff; }
@@ -1246,7 +1246,7 @@ a { text-decoration: none; }
 .header_agency .header__nav ul:last-child { margin-right: 59px; }
 .header_agency .header__nav a { display: block; float: none; min-width: 122px; height: 26px; font-size: 12px; line-height: 26px; text-transform: none; color: #bd904d; }
 .header_agency .header__nav a:before, .header_agency .header__nav a:after { background-color: #bd904d; }
-.header_agency .header__logo { background: url('../img/icons-s18fb6f14cc.png') 0 -459px no-repeat; width: 150px; height: 38px; display: inline-block; vertical-align: top; margin-top: 14px; }
+.header_agency .header__logo { background: url('../img/logo-s3737015d09.png') 0 -48px no-repeat; width: 147px; height: 38px; display: inline-block; vertical-align: top; margin-top: 14px; }
 .header_agency .header__top-menu { display: block; margin-top: 20px; font-size: 0; white-space: nowrap; }
 .header_agency .header__top-menu a { display: inline-block; vertical-align: middle; margin-right: 46px; font-size: 12px; color: #FFF; }
 .header_agency .header__top-menu a:last-child { margin-right: 0; }

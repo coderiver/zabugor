@@ -136,8 +136,10 @@ a
 		color: $black
 	&__logo
 		display: block
-		margin: 0 auto
-		+s(logo)
+		// margin: 0 auto
+		// +s(logo)
+		margin: 5px auto 15px
+		+s(logo-new, $logo)
 		+hide-text
 	&__left
 		position: absolute
@@ -318,7 +320,8 @@ a
 	&__logo
 		float: left
 		margin-top: 6px
-		+s(logo-nav)
+		// +s(logo-nav)
+		+s(logo-new-md, $logo)
 	&__main
 		position: relative
 		overflow: hidden
