@@ -1272,6 +1272,8 @@ a { text-decoration: none; }
 .currency-small__title span { color: #303030; }
 .currency-small__item { display: inline-block; margin-left: 18px; }
 
+.currency { white-space: nowrap; }
+
 .offers-wrap { margin: 40px -80px 0 0; font-size: 0; }
 .offers-wrap .offers { display: inline-block; vertical-align: top; width: 50%; padding-right: 80px; margin: 0 0 65px; }
 
